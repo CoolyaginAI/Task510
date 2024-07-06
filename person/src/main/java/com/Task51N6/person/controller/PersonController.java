@@ -5,6 +5,7 @@ import com.Task51N6.person.model.Person;
 import com.Task51N6.person.model.Weather;
 import com.Task51N6.person.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,6 +22,9 @@ public class PersonController {
 
     @Autowired
     public RestTemplate restTemplate;
+
+    @Value("${url.location}")
+    String urlLocation;
 
     @GetMapping("/person")
     public Iterable<Person> findAllPerson() {
@@ -76,7 +80,8 @@ public class PersonController {
         if (personRepository.existsById(id)) {
             String location = personRepository.findById(id).get().getLocation();
             Weather weather = restTemplate.getForObject(
-                    "http://localhost:8083/location/weather?name=" + location, Weather.class);
+                    "http://%s/weather?location=" +
+                    urlLocation + location, Weather.class);
             return new ResponseEntity(weather, HttpStatus.OK);
         }
         return new ResponseEntity(null, HttpStatus.NOT_FOUND);

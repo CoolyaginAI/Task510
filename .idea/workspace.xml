@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0c644877-9f17-4a9d-8d37-d1614e299e1f" name="Changes" comment="First">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location/src/main/java/com/Task51N6/location/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/location/src/main/java/com/Task51N6/location/controller/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/location/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/location/testdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/location/testdb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person/src/main/java/com/Task51N6/person/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/person/src/main/java/com/Task51N6/person/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/person/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/person/testdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/person/testdb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather/src/main/java/com/Task51N6/weather/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather/src/main/java/com/Task51N6/weather/controller/WeatherController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,20 +30,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.DiscoveryServerApplication.executor": "Run",
-    "Application.LocationApplication.executor": "Run",
-    "Application.PersonApplication.executor": "Run",
-    "Application.WeatherApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JAVA/CourseJAVA/Task51-6/Task510",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PersonApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WeatherApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/CourseJAVA/Task51-6/Task510&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -107,9 +106,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LocationApplication" />
         <item itemvalue="Application.WeatherApplication" />
         <item itemvalue="Application.PersonApplication" />
+        <item itemvalue="Application.LocationApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
       </list>
     </recent_temporary>
@@ -131,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720288172497</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First">
+      <option name="closed" value="true" />
+      <created>1720294121497</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720294121497</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
