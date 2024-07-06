@@ -27,7 +27,7 @@ public class WeatherController {
     @GetMapping("/weather")
     public Optional<Main> getWeather(@RequestParam String lat, @RequestParam String lon) {
         String request = String.format("%s?lat=%s&lon=%s&units=metric&appid=%s", urlWeather, lat, lon, appId);
-        return  Optional.of(restTemplate.getForObject(request, Root.class).getMain());
+        return Optional.of(restTemplate.getForObject(request, Root.class).getMain());
     }
 
 }

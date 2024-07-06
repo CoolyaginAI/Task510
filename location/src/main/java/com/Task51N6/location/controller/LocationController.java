@@ -4,6 +4,7 @@ import com.Task51N6.location.model.Location;
 import com.Task51N6.location.model.Weather;
 import com.Task51N6.location.repository.GeodataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -20,6 +21,10 @@ public class LocationController {
 
     @Autowired
     public RestTemplate restTemplate;
+
+    @Value("${weather.url}")
+    String weatherUrl;
+
 
     @GetMapping("/location")
     public Iterable<Location> findAllLocation() {
@@ -74,9 +79,12 @@ public class LocationController {
         Optional<Location> geodata = repository.findByName(name);
         Optional<Weather> resultWeather = Optional.empty();
 
+
         if (geodata.isPresent()) {
-            String url = String.format("http://localhost:8082/weather?lat=%s&lon=%s",
-                    geodata.get().getLat(), geodata.get().getLon());
+            String url = String.format("http://%s/weather?lat=%s&lon=%s",
+                    weatherUrl,
+                    geodata.get().getLat(),
+                    geodata.get().getLon());
             resultWeather = Optional.of(restTemplate.getForObject(url, Weather.class));
         }
 
