@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0c644877-9f17-4a9d-8d37-d1614e299e1f" name="Changes" comment="First">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/location/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location/testdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/location/testdb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/person/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/person/testdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/person/testdb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weather/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +53,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RunDashboard">
@@ -134,11 +138,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LocationApplication" />
         <item itemvalue="Application.PersonApplication" />
+        <item itemvalue="Application.LocationApplication" />
+        <item itemvalue="Application.WeatherApplication" />
         <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
-        <item itemvalue="Application.WeatherApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720360873850</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="First">
+      <option name="closed" value="true" />
+      <created>1720361574696</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720361574697</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
