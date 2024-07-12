@@ -1,6 +1,7 @@
 package com.Task51N6.location.controller;
 
 import com.Task51N6.location.model.Location;
+import com.Task51N6.location.model.Main;
 import com.Task51N6.location.model.Weather;
 import com.Task51N6.location.repository.GeodataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -74,10 +75,10 @@ public class LocationController {
 
 
     @GetMapping("/location/weather")
-    public Optional<Weather> redirectRequestWeather(@RequestParam String name) {
+    public Optional<Main> redirectRequestWeather(@RequestParam String name) {
 
         Optional<Location> geodata = repository.findByName(name);
-        Optional<Weather> resultWeather = Optional.empty();
+        Optional<Main> resultWeather = Optional.empty();
 
 
         if (geodata.isPresent()) {
@@ -85,7 +86,7 @@ public class LocationController {
                     weatherUrl,
                     geodata.get().getLat(),
                     geodata.get().getLon());
-            resultWeather = Optional.of(restTemplate.getForObject(url, Weather.class));
+            resultWeather = Optional.of(restTemplate.getForObject(url, Main.class));
         }
 
         return  resultWeather;

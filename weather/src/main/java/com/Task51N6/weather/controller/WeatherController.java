@@ -2,6 +2,7 @@ package com.Task51N6.weather.controller;
 
 import com.Task51N6.weather.model.Main;
 import com.Task51N6.weather.model.Root;
+import com.Task51N6.weather.model.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
