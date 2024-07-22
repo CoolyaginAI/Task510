@@ -50,8 +50,8 @@ public class LocationController {
 
         if (geodata.isPresent()) {
             geodata.get().setName(location.getName());
-            geodata.get().setLat(location.getLat());
-            geodata.get().setLon(location.getLon());
+            geodata.get().setLatitude(location.getLatitude());
+            geodata.get().setLongitude(location.getLongitude());
             repository.save(repository.findByName(name).get());
             return HttpStatus.OK;
         }
@@ -84,8 +84,8 @@ public class LocationController {
         if (geodata.isPresent()) {
             String url = String.format("http://%s/weather?lat=%s&lon=%s",
                     weatherUrl,
-                    geodata.get().getLat(),
-                    geodata.get().getLon());
+                    geodata.get().getLatitude(),
+                    geodata.get().getLongitude());
             resultWeather = Optional.of(restTemplate.getForObject(url, Main.class));
         }
 
